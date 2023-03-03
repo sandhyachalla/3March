@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="parent"></div>
+	<script type="text/javascript">
+		var inputField=document.createElement("input");
+		document.getElementById("parent").append(inputField)
+		inputField.setAttribute("placeholder","Username")
+		var paraField=document.createElement("p")
+		paraField.innerHTML="I learned about create element"
+		document.getElementById("parent").append(paraField)
+		var imagetag=document.createElement("img")
+		document.getElementById("parent").append(imagetag)
+		imagetag.setAttribute("src","https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg")
+		imagetag.setAttribute("width","15%")
+	</script>
+
+</body>
+</html>

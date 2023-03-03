@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: blue;
+		}
+		center{
+			margin: auto;
+			background-color:blue ;
+
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p><input id="username" type="email" placeholder="Enter Username" /></p>
+		<p><input id="password" type="password" placeholder="Enter password" /></p>
+		<button id="btn" onclick="display()">Show</button>
+	</center>
+	<script type="text/javascript">
+		function display(){
+			var pData=document.getElementById("password");
+			console.log(pData.type)
+			if(pData.type=="password"){
+
+				var s=pData.setAttribute("type","text")
+				pData.append(s)
+				document.getElementById("btn").innerHTML="HIDE"
+			}
+			else{
+				var s=pData.setAttribute("type","password")
+				pData.append(s)
+				document.getElementById("btn").innerHTML="SHOW"
+
+			}
+		}
+	</script>
+
+
+
+</body>
+</html>
